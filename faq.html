@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <title>Gestor UPA - FAQ</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-xxl navbar-light bg-light border-bottom border-success">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/upa-logo - Copia (2).png" alt="Logo GA UPA" width="auto" height="55rem">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav w-100 nav-fill">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./notifications.html">
+                <i class="bi bi-bell"></i>
+                <p>Notificações</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./solicitation.html">
+                <i class="bi bi-box-arrow-up"></i>
+                <p>Atendimento</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./queue.html">
+                <i class="bi bi-hourglass"></i>
+                <p>Fila</p>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="accountDropdown" aria-current="page" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person"></i>
+                <p>Minha Conta</p>
+              </a>
+              <ul class="dropdown-menu bg-light" aria-labelledby="accountDropdown">
+                <li><a class="dropdown-item" href="#">Configurações</a></li>
+                <li><a class="dropdown-item" href="#">Meus Dados</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./index.html">Sair</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./faq.html">
+                <i class="bi bi-question-octagon"></i>
+                <p>FAQ</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container w-100 h-100 d-flex flex-column align-items-center">
+    <div class="title w-100 text-center">
+      <h2 class="fw-light">Perguntas Frequentes</h2>
+    </div>
+    <div class="accordion accordion-flush w-100" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="fh1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#fc1" aria-expanded="false" aria-controls="fc1">
+            <strong>1 - Como utilizar o aplicativo?</strong>
+          </button>
+        </h2>
+        <div id="fc1" class="accordion-collapse collapse" aria-labelledby="fh1"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Botão abrir, tela bem-vindo, criar conta usando CPF, aceitar termos de uso. Na
+            próxima tela, calendário, agendamento de consultas, medicamentos, consultas realizadas e outros serviços.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="fh2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#fc2" aria-expanded="false" aria-controls="fc2">
+            <strong>2 - Como agilizar meu atendimento?</strong>
+          </button>
+        </h2>
+        <div id="fc2" class="accordion-collapse collapse" aria-labelledby="fh2"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Utilize aplicativos dos serviços prestados pelas unidades do SUS, mantenha-se
+            conectado com todos os serviços das UPA.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="fh3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#fc3" aria-expanded="false" aria-controls="fc3">
+            <strong>3 - Como cancelar meu atendimento?</strong>
+          </button>
+        </h2>
+        <div id="fc3" class="accordion-collapse collapse" aria-labelledby="fh3"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">É possível cancelar o agendamento, porém é necessário informar o motivo do não
+            comparecimento.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="fh4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#fc4" aria-expanded="false" aria-controls="fc4">
+            <strong>4 - No que este app me auxilia?</strong>
+          </button>
+        </h2>
+        <div id="fc4" class="accordion-collapse collapse" aria-labelledby="fh4"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">O sistema foi desenvolvido para agilizar o processo de filas e atendimento, a ponto que não seja necessário permanecer na UPA enquanto aguarda ser atendido.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="fh5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#fc5" aria-expanded="false" aria-controls="fc5">
+            <strong>5- Utilizando o app é necessario Triagem?</strong>
+          </button>
+        </h2>
+        <div id="fc5" class="accordion-collapse collapse" aria-labelledby="fh5"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">A Triagem ainda é necessária salvo em caso de Urgência.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="fh6">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#fc6" aria-expanded="false" aria-controls="fc6">
+            <strong>6 - O que se considera um caso de urgência?</strong>
+          </button>
+        </h2>
+        <div id="fc6" class="accordion-collapse collapse" aria-labelledby="fh6"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Casos de urgência são considerados ....</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="fh7">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#fc7" aria-expanded="false" aria-controls="fc7">
+            <strong>7 - Serei avisado de minha posição na Fila?</strong>
+          </button>
+        </h2>
+        <div id="fc7" class="accordion-collapse collapse" aria-labelledby="fh7"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Sim, ao chegar próximo a sua posição da senha o sistema automaticamente enviará um sinal sonoro caso permitido pelo celular. Sempre válido lembrar de manter-se conectado e conferindo sua posição na Fila.</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <section>
+    <script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./assets/js/scripts.js"></script>
+  </section>
+
+</body>
+
+</html>

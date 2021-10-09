@@ -1,0 +1,395 @@
+/* General Styling */
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  height: 0.6rem;
+  margin-right: 10px;
+}
+
+::-webkit-scrollbar-corner {
+  border: none;
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(61, 60, 66);
+  border-radius: 3px;
+  cursor: move;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(18, 18, 20);
+  border: none;
+}
+
+:root {
+  --background: #e5e5e5;
+  --blue-100: #cfe2ff;
+  --blue-200: #9ec5fe;
+  --blue-300: #6ea8fe;
+  --blue-400: #3d8bfd;
+  --blue-500: #0d6efd;
+  --blue-600: #0a58ca;
+  --blue-700: #084298;
+  --blue-800: #052c65;
+  --blue-900: #031633;
+  --indigo-100: #e0cffc;
+  --indigo-200: #c29ffa;
+  --indigo-300: #a370f7;
+  --indigo-400: #8540f5;
+  --indigo-500: #6610f2;
+  --indigo-600: #520dc2;
+  --indigo-700: #3d0a91;
+  --indigo-800: #290661;
+  --indigo-900: #140330;
+  --purple-100: #e2d9f3;
+  --purple-200: #c5b3e6;
+  --purple-300: #a98eda;
+  --purple-400: #8c68cd;
+  --purple-500: #6f42c1;
+  --purple-600: #59359a;
+  --purple-700: #432874;
+  --purple-800: #2c1a4d;
+  --purple-900: #160d27;
+  --pink-100: #f7d6e6;
+  --pink-200: #efadce;
+  --pink-300: #e685b5;
+  --pink-400: #de5c9d;
+  --pink-500: #d63384;
+  --pink-600: #ab296a;
+  --pink-700: #801f4f;
+  --pink-800: #561435;
+  --pink-900: #2b0a1a;
+  --red-100: #f8d7da;
+  --red-200: #f1aeb5;
+  --red-300: #ea868f;
+  --red-400: #e35d6a;
+  --red-500: #dc3545;
+  --red-600: #b02a37;
+  --red-700: #842029;
+  --red-800: #58151c;
+  --red-900: #2c0b0e;
+  --orange-100: #ffe5d0;
+  --orange-200: #fecba1;
+  --orange-300: #feb272;
+  --orange-400: #fd9843;
+  --orange-500: #fd7e14;
+  --orange-600: #ca6510;
+  --orange-700: #984c0c;
+  --orange-800: #653208;
+  --orange-900: #331904;
+  --yellow-100: #fff3cd;
+  --yellow-200: #ffe69c;
+  --yellow-300: #ffda6a;
+  --yellow-400: #ffcd39;
+  --yellow-500: #ffc107;
+  --yellow-600: #cc9a06;
+  --yellow-700: #997404;
+  --yellow-800: #664d03;
+  --yellow-900: #332701;
+  --green-100: #d1e7dd;
+  --green-200: #a3cfbb;
+  --green-300: #75b798;
+  --green-400: #479f76;
+  --green-500: #198754;
+  --green-600: #146c43;
+  --green-700: #0f5132;
+  --green-800: #0a3622;
+  --green-900: #051b11;
+  --cyan-100: #cff4fc;
+  --cyan-200: #9eeaf9;
+  --cyan-300: #6edff6;
+  --cyan-400: #3dd5f3;
+  --cyan-500: #0dcaf0;
+  --cyan-600: #0aa2c0;
+  --cyan-700: #087990;
+  --cyan-800: #055160;
+  --cyan-900: #032830;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.active {
+  color: var(--green-500) !important;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Main Queue */
+main {
+  width: 100%;
+}
+
+main .queue-container {
+  width: fit-content;
+  padding: 10%;
+  border-radius: 100%;
+}
+
+main .queue-container h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+main .queue-container p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+main a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+main a:hover,
+main a:active,
+main a:visited {
+  color: black;
+}
+
+/* Main Notifications */
+
+main.container div.notification {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--gray-400);
+}
+
+main.container div.notification p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+main.container div.notification h3 {
+  font-size: 1rem;
+}
+
+/* Main Login */
+
+main.container div.login-fields {
+  background: white;
+  min-width: 30vw;
+  min-height: 35vh;
+  padding: 2rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+main.container h2 {
+  font-weight: 300;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+main.container div.login-fields form {
+  display: flex;
+  flex-direction: column;
+}
+
+main.container div.login-fields .input-field {
+  position: relative;
+}
+
+main.container div.login-fields form .input-field:first-child {
+  margin-bottom: 1.5rem;
+}
+
+main.container div.login-fields .input-field .underline::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+main.container div.login-fields .input-field .underline::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  background: linear-gradient(45deg, var(--green-700), var(--green-300));
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+  transform-origin: left;
+}
+
+main.container div.login-fields .input-field input:focus ~ .underline::after {
+  transform: scaleX(1);
+}
+
+main.container div.login-fields .input-field input {
+  outline: none;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+}
+
+main.container div.login-fields .input-field input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+main.container div.login-fields form a {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 0.4rem;
+  width: 100%;
+  background: linear-gradient(to left, var(--green-300), var(--green-700));
+  cursor: pointer;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 300;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+main.container div.login-fields form a:hover {
+  letter-spacing: 0.5px;
+  background: linear-gradient(to right, var(--green-300), var(--green-700));
+}
+
+main.container div.login-fields .login-footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+main.container div.login-fields .login-footer span {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+main.container div.login-fields .login-footer .social-field {
+  padding: 0.4rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+main.container div.login-fields .login-footer .social-field a i {
+  margin: 0 0.5rem;
+  width: 15px;
+}
+
+main.container div.login-fields .login-footer .social-field a {
+  text-decoration: none;
+  color: white;
+}
+
+main.container div.login-fields .login-footer .social-field.gov-br {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+main.container div.login-fields .login-footer .social-field.gov-br img {
+  background: transparent;
+  width: 10rem;
+}
+
+/* Main Solicitation */
+
+main.container div.solicitation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main.container div.solicitation div.profile-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main.container div.solicitation form label {
+  font-size: 1.3rem;
+}
+
+main.container div.solicitation form textarea {
+  resize: none;
+  outline: none;
+  padding: 0.5rem;
+  border: 1px solid var(--gray-200);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+
+header {
+  width: 100%;
+}
+
+/* NavBar */
+
+nav a.nav-link p,
+nav a.nav-link {
+  margin: 0;
+  padding: 0;
+}
+
+nav a.nav-link i {
+  font-size: 1.5rem;
+}
+
+/* Mobile Responsivity */
+
+@media (max-width: 1300px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
